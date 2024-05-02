@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Calculater</title>
+</head>
+<body>
+
+
+    
+    <!-- calculater Start -->
+
+<div class="calculater">
+       
+    <input type="text" disabled placeholder="0" id="inputBox" >
+
+<div>
+    <button class="operator" onclick="singleClear()">C</button>
+    <button class="operator" onclick="clearall()">AC</button>
+    <button class="operator" onclick="calculatePercentage()">%</button>
+    <button class="operator" onclick="addition('/')">/</button>
+
+</div>
+<div>
+<!-- function (addition) call karte waqt argument ma jo value dan ga who (javascript) function me perameter ma receive karen ga.  -->
+<!-- yaha hum jo value bracket ma de rahen hai. use function ma receive kar hahai nahi or us ka name (num) rakha hai. -->
+
+    <button onclick="addition(7)">7</button>  
+    <button onclick="addition(8)">8</button>
+    <button onclick="addition(9)">9</button>
+    <button class="operator" onclick="addition('*')">*</button>
+
+
+</div>
+<div>
+    <button onclick="addition(4)">4</button>
+    <button onclick="addition(5)">5</button>
+    <button onclick="addition(6)" >6</button>
+    <button class="operator" onclick="addition('-')">-</button>
+
+
+</div>
+<div>
+    <button onclick="addition(1)" >1</button>
+    <button onclick="addition(2)">2</button>
+    <button onclick="addition(3)">3</button>
+    <button class="operator" onclick="addition('+')">+</button>
+
+
+</div>
+
+<div>
+    <button onclick="addition('00')" >00</button>
+    <button onclick="addition(0)">0</button>
+    <button onclick="addition('.')">.</button>
+    <button class="equalBtn" onclick="result()">=</button>
+
+
+</div>
+
+</div>
+<!-- calculater end -->
+
+</body>
+<script src="app.js"></script>
+</html>
